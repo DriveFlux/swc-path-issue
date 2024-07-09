@@ -11,4 +11,16 @@
       "../apps/bar/**/*.ts",
       "**/*.ts",    
     ],
+    "ts-node": {
+      "transpileOnly": true,
+      "esm": true,
+      "files": true,
+      "experimentalResolver": true,
+      "experimentalSpecifierResolution": "node",
+      "compilerOptions": {
+        "paths": {
+          "@app/*": ["../apps/bar/*"]
+        }
+      }
+    }
   }

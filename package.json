@@ -3,14 +3,21 @@
     "private": true,
     "type": "module",
     "scripts": {
-        "register": "cross-env SWCRC=true TS_NODE_PROJECT=./internal/tsconfig.json node --import @swc-node/register/esm-register",
-        "internal": "pnpm register ./internal/foo.ts"
+        "register": "cross-env TS_NODE_PROJECT=./internal/tsconfig.json node --import @swc-node/register/esm-register",
+        "internal": "pnpm register ./internal/foo.ts",
+        "internal2": "cross-env TS_NODE_PROJECT=./internal/tsconfig.json node --import ./ts-node-register.js ./internal/foo.ts",
+        "internal3": "cross-env TS_NODE_PROJECT=./internal/tsconfig.json vite-node ./internal/foo.ts"
     },
     "devDependencies": {
         "@swc-node/register": "^1.10.3",
+        "@swc/cli": "^0.4.0",
         "@swc/core": "^1.6.13",
         "@swc/helpers": "^0.5.11",
         "cross-env": "^7.0.3",
-        "typescript": "^5.5.3"
+        "ts-node": "^10.9.2",
+        "typescript": "^5.5.3",
+        "vite": "^5.3.3",
+        "vite-node": "^2.0.1",
+        "vite-tsconfig-paths": "^4.3.2"
     }
 }

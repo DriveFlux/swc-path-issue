@@ -1,4 +1,4 @@
-import { other } from '@app/baz/other'
+import { other } from '@app/functions/other'
 
 export const hello = () => {
     console.log(`Hello ${other.there}`)
