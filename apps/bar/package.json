@@ -1,0 +1,11 @@
+{
+    "name": "@bar/app",
+    "type": "module",
+    "scripts": {
+        
+    },
+    "devDependencies": {
+        "@bar/tsconfig": "workspace:*",
+        "typescript": "^5.5.3"
+    }
+}

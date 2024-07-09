@@ -1,0 +1,16 @@
+{
+    "name": "test",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "register": "cross-env SWCRC=true TS_NODE_PROJECT=./internal/tsconfig.json node --import @swc-node/register/esm-register",
+        "internal": "pnpm register ./internal/foo.ts"
+    },
+    "devDependencies": {
+        "@swc-node/register": "^1.10.3",
+        "@swc/core": "^1.6.13",
+        "@swc/helpers": "^0.5.11",
+        "cross-env": "^7.0.3",
+        "typescript": "^5.5.3"
+    }
+}

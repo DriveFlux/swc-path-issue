@@ -1,0 +1,19 @@
+{
+    "$schema": "https://swc.rs/schema.json",
+    "jsc": {
+      "externalHelpers": true,
+      "parser": {
+        "syntax": "typescript",
+        "tsx": true
+      },
+      "target": "esnext",
+      "baseUrl": ".",
+      "paths": {
+        "@app/*": ["./apps/bar/*"]
+      }
+    },
+    "module": {
+      "type": "es6",
+      "resolveFully": true
+    }
+  }

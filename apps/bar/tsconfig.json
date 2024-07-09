@@ -1,0 +1,20 @@
+{
+    "extends": "@bar/tsconfig/nextjs.json",
+    "compilerOptions": {
+      "jsx": "preserve",
+      "baseUrl": ".",
+      "paths": {
+        "@app/*": [
+          "./*"
+        ]
+      }
+    },
+    "include": [
+        "**/*.ts",
+        "**/*.tsx",
+        ".next/types/**/*.ts"
+       ],
+      "exclude": [
+        "node_modules"
+      ]
+}
